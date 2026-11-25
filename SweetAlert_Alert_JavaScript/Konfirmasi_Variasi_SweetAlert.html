@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Variasi SweetAlert</title>
+</head>
+<style>
+    .body {
+        background-color: darkcyan;
+        color: black;
+        font-family: sans-serif;
+        font-size: medium;
+    }
+
+    h1,footer {
+        background-color: aqua;
+        color: black;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+
+    .btn-besar {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+
+    .btn-kecil {
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<body class="body">
+    <header>
+        <h1 align="center">Konfirmasi Variasi SweetAlert</h1>
+    </header>
+
+    <main>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-sm-30" style="background-color: honeydew;">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolorem aliquid, temporibus, voluptate nam, at rem quo nesciunt assumenda iure cumque maxime sed adipisci hic ea deserunt suscipit. Excepturi, officiis!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus aliquid, temporibus debitis aut necessitatibus, deleniti esse minima blanditiis, ipsam quo voluptas! Ratione iure sed fugiat corrupti soluta quos sapiente?
+                        Saepe, autem? Magni reprehenderit placeat neque, voluptas officia animi unde doloremque architecto exercitationem nisi tempore minus ea excepturi nostrum dolorem beatae sapiente vel. Unde quas sed voluptate suscipit repellat voluptatem.
+                        Repellat deserunt vero sit vitae distinctio quae non blanditiis aliquam aut, nihil odit consequuntur voluptates nulla consectetur totam tempora quisquam maiores assumenda dolores dolorum necessitatibus nisi ut accusamus. Nihil, ipsa?
+                    </p>
+
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+                    <script>
+                        function konfirmasi() {
+                            swal.fire({
+                                icon: "info",
+                                title: "ANDA YAKIN INI DI KIRIM !!",
+                                text: "Anda harus pastikan dan periksa sebelum dikirim",
+                                showCancelButton: true,
+                                confirmButtonText: "YA",
+                                cancelButtonText: "TIDAK",
+                                confirmButtonColor: "green",
+                                cancelButtonColor: "red",
+                                customClass: {
+                                    confirmButton: "btn-besar",
+                                    cancelButton: "btn-kecil",
+                                }
+                            });
+                        }
+                    </script>
+
+                    <button class="btn btn-primary" onclick="konfirmasi()">KONFIRMASI SEKARANG</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

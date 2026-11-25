@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Lagi SweetAlert</title>
+</head>
+<style>
+    button {
+        background-color: aqua;
+        color: black;
+        font-size: large;
+        font-family: sans-serif;
+        padding: 20px 20px;
+    }
+</style>
+<body>
+    <h1>Konfirmasi Lagi SweetAlert</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function contohDua() {
+            swal.fire({
+                icon: "success",
+                title: "ANDA BERHASIL LOGIN DENGAN BENAR",
+                text: "Selamat, anda telah berhasil login ke website Blogger Admin",
+                confirmButtonText: "OK",
+                confirmButtonColor: "blue",
+                background: "orange",
+                color: "black",
+            });
+        }
+    </script>
+
+    <button onclick="contohDua()">KLIK AJA DENGAN PERCAYA DIRI DAN TIDAK ADA YANG PERLU DITAKUTKAN</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Untuk Apa Aja</title>
+</head>
+<style>
+    button {
+        background-color: aqua;
+        color: black;
+        font-size: large;
+        font-family: sans-serif;
+        padding: 15px 20px;
+    }
+</style>
+<body>
+    <h1>Konfirmasi untuk apa aja</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function smurfStorm() {
+            swal.fire({
+                icon: "warning",
+                title: "APAKAH INGIN LOGIN KE WEB INI",
+                text: "Anda harus membaca Kebijakan Privasi Kami",
+                showCancelButton: true,
+                confirmButtonText: "YA",
+                cancelButtonText: "TIDAK",
+                confirmButtonColor: "green",
+                cancelButtonColor: "red",
+                background: "aqua",
+                color: "black",
+            });
+        }
+    </script>
+
+    <button onclick="smurfStorm()">TEKAN AJA KAWAN !!!</button>
+</body>
+</html>
