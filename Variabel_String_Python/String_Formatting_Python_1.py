@@ -1,0 +1,10 @@
+y = "Habib Muzakki"
+u = "Kelas 11 Agama"
+m = "Siswa MAN 2 KOTA SERANG"
+i = "OSN-K Informatika secara resmi"
+o = "Minangkabau-Piliang"
+p = "Kota Serang"
+k = "165 cm"
+j = "60 kg"
+text = f"- Halo nama saya {y}, saya adalah seorang {m}, dari {u}, saya mengikuti {i}, berasal dari {o}, bertempat tinggal di {p}, tinggi saya {k}, dan berat badan saya adalah {j}"
+print (text)
