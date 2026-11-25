@@ -1,0 +1,20 @@
+yuu = ("Belajar", "Coding", "di", "Duniacoding")
+klo = (100, 200, 300, 400, 500, 600 )
+mo  = ("Jacha", 134, 242, 133, True)
+print (yuu)
+print (klo)
+print (mo)
+
+yuu = ("Belajar", "Coding", "di", "Duniacoding")
+klo = (100, 200, 300, 400, 500, 600) 
+mo  = ("Jacha", 134, 242, 133, True)
+print (type (yuu))
+print (type (klo))
+print (type (mo))
+
+yuu = ("Belajar", "Coding", "di", "Duniacoding", "Indonesia")
+print (yuu [0])
+print (yuu [1])
+print (yuu [3])
+print (yuu [4])
+
