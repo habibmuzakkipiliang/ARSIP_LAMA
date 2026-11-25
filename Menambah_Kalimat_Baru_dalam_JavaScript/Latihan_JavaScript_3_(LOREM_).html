@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 3</title>
+</head>
+<body>
+    <h1 align="center">Latihan JavaScript 3</h1>
+    <p>Saya sedang latihan JavaScript</p>
+    <p>Klik untuk nambah kalimat baru</p>
+    <button id="rumah" onclick="rumahBaru()">Klik</button>
+    <div id="rumahBaru"></div>
+
+    <script>
+        function rumahBaru() {
+            let a = document.getElementById("rumahBaru")
+            a.innerHTML += "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo velit magni exercitationem, expedita, quam sunt ullam amet molestiae officiis facilis in necessitatibus, accusamus consectetur placeat dignissimos esse fugit vitae similique?</p>"
+            a.innerHTML += "<p>Python adalah bahasa pemrograman tingkat tinggi yang fleksibel dan populer, digunakan dalam berbagai aplikasi seperti pengembangan web, analisis data, dan machine learning. Python dikenal karena sintaksnya yang mudah dipahami dan didesain untuk keterbacaan kode, sehingga mudah dipelajari baik oleh pemula maupun profesional.</p>"
+        }
+    </script>
+</body>
+</html>

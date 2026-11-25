@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Ternary JavaScript</title>
+</head>
+<body>
+    <h1>Percabangan Ternary JavaScript</h1>
+
+    <script>
+        var nama_kamu = prompt ("Masukkan nama kamu ?")
+        var kelas_kamu = prompt ("Masukkan kelas kamu ??")
+        var tinggi_kamu = prompt ("Masukkan tinggi kamu ??")
+        var etnis_kamu = prompt ("Masukkan etnis kamu ????")
+        var umur_kamu = prompt ("Masukkan umur kamu ???")
+
+        if (nama_kamu == "Habib") {
+            if (kelas_kamu == "12") {
+                if (tinggi_kamu == "15") {
+                    if (etnis_kamu == "Padang") {
+                        if (umur_kamu == "18") {
+                            document.write ("<h2>Selamat datang di Aplikasi saya</h2>");
+                        }
+                    }
+
+                    else {
+                        document.write ("<p>Anda Salah</p>")
+                    }
+                }
+            }
+        }
+
+        else {
+            document.write ("<h3>Anda Tidak Terdaftar</h3>")
+        }
+    </script>
+</body>
+</html>

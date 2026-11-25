@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Input Data JavaScript 1</title>
+</head>
+<body>
+    <h1>Percabangan Input Data JavaScript 1</h1>
+
+    <script>
+        var input = prompt ("Masukkan data kamu ??");
+        input = number(input);
+
+        var grade;
+
+        if (input < 100) {
+            grade = "A";
+        }
+
+        else if (input < 95) {
+            grade = "B";
+        }
+
+        else if (input < 90) {
+            grade = "C";
+        }
+
+        else {
+            grade = "D";
+        }
+
+        alert (" Nilai kamu adalah " + input + " dengan predikat " + grade);
+    </script>
+</body>
+</html>

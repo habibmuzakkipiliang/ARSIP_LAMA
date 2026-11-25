@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript Ulas Kembali</title>
+</head>
+<body>
+
+    <h1 align="center">Latihan JavaScript Ulas Kembali</h1>
+    <script>
+        // Hello World
+        document.write ("Hello World <br>")
+        console.log ("Hello World")
+
+        // string JavaScript
+        let a = "Senin ";
+        let b = "Selasa ";
+        let c = "Rabu ";
+        let d = "Kamis ";
+        let e = "Jumat ";
+        let f = "Sabtu ";
+        let g = "Minggu ";
+
+        document.write ("Hari " + a + "<br>")
+        document.write ("Hari " + b + "<br>")
+        document.write ("Hari " + c + "<br>")
+        document.write ("Hari " + d + "<br>")
+        document.write ("Hari " + e + "<br>")
+        document.write ("Hari " + f + "<br>")
+        document.write ("Hari " + g + "<br>")
+
+        // Tipe data JavaScript
+        let teks = "Belajar HTML"; // String
+        let angka =  124  // integer
+        let desimal =  3.14 // float
+        let benar =  true  // Boolean
+        let list = [" Jaun ", "Osep ", "Fajar ", "Irpan "] // array atau list
+        let tuple = ("Hame ", "Romi" , "Jansen ") // tuple
+
+        document.write ("<br>" + teks + angka + desimal + benar + list + tuple)
+
+        // variabel
+
+        let nama = "Habib Muzakki";
+        const umur = 20;
+        document.write ("<br>" + nama + "Berusia" + umur)
+
+        // operator aritmatika
+        let x = 5; y = 10, z = 0
+
+        z = x + y;
+        document.write (`<br> ${x} + ${y} =  ${z}`);
+
+        z = x - y;
+        document.write (`<br> ${x} - ${y} = ${z}`);
+        
+        z = x * y;
+        document.write (`<br> ${x} * ${y} = ${z}`);
+
+        z = x ** y;
+        document.write (`<br> ${x} ** ${y} = ${z}`);
+
+        z = x / y;
+        document.write (`<br> ${x} / ${y} = ${z} <br>`);
+
+        // operator logika
+        let aku = 20;
+        let kamu = 45;
+
+        var hasil = aku < kamu;
+        document.write (`${aku} < ${kamu} = ${hasil} <br>`)
+
+        var hasil = aku > kamu;
+        document.write (`${aku} > ${kamu} = ${hasil} <br>`)
+
+        var hasil = aku && kamu;
+        document.write (`${aku} && ${kamu} = ${hasil} <br>`)
+
+        var hasil = aku == kamu;
+        document.write (`${aku} == ${kamu} = ${hasil} <br>`)
+
+        var hasil = aku || kamu;
+        document.write (`${aku} || ${kamu} = ${hasil} <br>`)
+
+        // percabangan 
+
+        let nilai = 134 ;
+
+        if (nilai > 12) {
+            document.write ("Lulus")
+        }
+
+        else if (nilai < 12) {
+            document.write ("Tidak lulus")
+        }
+
+        else {
+            document.write ("Sama saja" + "<br>")
+        }
+
+        // perulangan for
+
+
+        for (a = 1; a < 10; a++) {
+            document.write ("Perulangan ke - " + a + "<br>")
+        }
+
+        // perulangan do 
+
+        let i = 1;
+
+        while (i < 10) {
+            document.write ("While adalah - " + i + "<br>");
+            i++;
+        }
+
+        let j = 2;
+
+        do {
+            document.write ("do - while adalah - " + j + "<br>"); 
+            i++;
+        } 
+        
+        while (j < 5);
+    </script>
+</body>
+</html>

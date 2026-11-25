@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML JavaScript</title>
+</head>
+<style>
+    body {
+        font-size: larger;
+        font-family: sans-serif;
+    }
+</style>
+<body>
+    <h1 align="center">Inner HTML JavaScript</h1>
+
+    <div id="hasil-kop"></div>
+    <script>
+        // membuat objek elemen
+        var hasil = document.getElementById ("hasil-kop")
+
+        // menampilkan output di HTML
+        hasil.innerHTML += "<p> ​Film Jumbo adalah film animasi fantasi petualangan asal Indonesia yang dirilis pada 31 Maret 2025. Film ini merupakan debut penyutradaraan Ryan Adriandhy dan diproduksi oleh Visinema Studios bekerja sama dengan Springboard dan Anami Films. Film ini menampilkan suara dari aktor dan aktris ternama seperti Prince Poetiray, Quinn Salman, Bunga Citra Lestari, dan Ariel NOAH </p>";
+
+        hasil.innerHTML += "<b> Sinopsis singkat </b>"
+        
+        hasil.innerHTML += "<p> Jumbo mengisahkan tentang Don, seorang anak laki-laki berusia 10 tahun yang memiliki tubuh besar dan sering diremehkan oleh teman-temannya. Don memiliki sebuah buku dongeng warisan dari orang tuanya yang penuh dengan ilustrasi dan cerita ajaib. Bersama teman-temannya, Don berusaha membuat pertunjukan berdasarkan buku tersebut. Namun, ia menghadapi berbagai rintangan, termasuk ejekan dan pencurian buku oleh temannya sendiri. Dalam perjalanannya, Don bertemu dengan Meri, seorang anak perempuan dari dunia lain yang sedang mencari kedua orang tuanya. Film ini mengangkat tema persahabatan, keberanian, dan perjuangan mengejar mimpi. </p>"
+    </script>
+
+    <b>Produksi dan Prestasi</b>
+    <ul>
+        <li><b>Durasi:</b> 102 menit</li>
+        <li><b>Bahasa:</b> Indonesia</li>
+        <li><b>Pendapatan Kotor:</b> Diperkirakan mencapai Rp199 miliar</li>
+        <li><b>Jumlah Penonton:</b> Lebih dari 5 juta penonton dalam waktu singkat setelah penayangan, menjadikannya salah satu film animasi Indonesia terlaris sepanjang masa</li>
+        <li><b>Distribusi Internasional:</b> Tayang di 17 negara, termasuk 12 negara di Eropa, serta Turki, Mongolia, dan Rusia</li>
+    </ul>
+    
+    <div id="la-junta"></div>
+    <script>
+        // membuat objek 
+        var mook = document.getElementById ("la-junta")
+
+        // menampilkan output di HTML
+        mook.innerHTML += "<b>Nilai dan Pesan</b> <p>Jumbo bukan sekadar film animasi untuk anak-anak, tetapi juga menyentuh berbagai kalangan usia dengan pesan moral yang kuat tentang pentingnya kepercayaan diri, persahabatan, dan keberanian untuk melawan perundungan. Film ini juga mengajak penonton untuk kembali merasakan kehangatan masa kecil dan keajaiban dalam kisah persahabatan yang penuh makna </p>"
+
+        mook.innerHTML += "<p>Untuk melihat trailer resmi dan mendapatkan informasi lebih lanjut, Anda dapat mengunjungi kanal YouTube Visinema Pictures atau akun media sosial resmi mereka</p>"
+    </script>
+</body>
+</html>

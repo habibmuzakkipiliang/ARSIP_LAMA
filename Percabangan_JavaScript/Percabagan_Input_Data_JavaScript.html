@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabagan Input Data JavaScript</title>
+</head>
+<body>
+    <h1>Percabagan Input Data JavaScript</h1>
+
+    <script>
+        // meminta masukkan nilai kamu
+        var nilai = prompt ("Masukkan nilai kamu :");
+
+        // ubah dari string ke number
+        nilai = Number(nilai);
+
+        var predikat;
+
+        // struktur percabangan if-else untuk menentukan predikat
+        if (nilai > 90) {
+            predikat = "A";
+        }
+
+        else if (nilai < 85) {
+            predikat = "B";
+        }
+
+        else if (nilai < 75) {
+            predikat = "C";
+        }
+
+        else if (nilai < 60) {
+            predikat = "D";
+        }
+
+        else {
+            predikat = "F";
+        }
+
+        // alert nilai
+
+        alert (" Nilai kamu adalah " + nilai + " dengan predikat " + predikat);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB STORAGE LOCAL JAVASCRIPT</title>
+</head>
+<body>
+    <h1>HALO WORLD</h1>
+
+    <input type="text" id="input" placeholder="masukkan nama Input :">
+    <button type="button" onclick="simpanNama()">KLIK SAJA</button>
+    <button type="button" onclick="tampilkanNama()">KLIK SAJA</button>
+    <p id="hasil"></p>
+
+    <script>
+        // Menampilkan nama 
+        function simpanNama() {
+            let nama = document.getElementById("input").value;
+            localStorage.setItem("nama", nama);
+
+            alert ("Nama anda akan dsimpan disini ")
+        }
+    </script>
+
+    <script>
+        function tampilkanNama() {
+            let namaDisimpan = localStorage.getItem("nama");
+            if (namaDisimpan) {
+                document.getElementById("hasil").innerHTML = "Nama anda adalah" + namaDisimpan
+                ;
+            }
+
+            else {
+                document.getElementById("hasil").innerHTML = "Nama anda tidak ada";
+            }
+        }
+    </script>
+</body>
+</html>

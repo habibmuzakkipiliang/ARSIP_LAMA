@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 2</title>
+</head>
+<body>
+    <h1>Latihan JavaScript 2</h1>
+
+    <script>
+
+        //Hello World
+        document.write ("<h2>HALO ANAK MAN 2</h2>");
+        console.log ("SELAMAT DATANG DI LATIHAN AKU");
+        console.log ("INI ADALAH LATIHAN KEDUA AKU DI JAVASCRIPT");
+        document.write ("<p>Ini adalah latihan kedua aku di JavaScript</p>");
+    </script>
+    <p></p>
+    <script>
+        // variabel dan data diri sendiri
+        var nama = "Habib Muzakki Piliang";
+        var umur = "18 tahun (2025)";
+        var warga_negara = "Indonesia";
+        var tempat_tinggal = "Kota Serang, Provinsi Banten";
+        var passion = "Belajar Web Coding Front End dan Mobile App";
+        var tinggi_badan = "172 cm";
+        var berat_badan = "57 kg";
+
+        document.write ("Nama lengkap : " + nama + "<br>");
+        document.write ("Umur : " + umur + "<br>");
+        document.write ("Warga Negara : " + warga_negara + "<br>");
+        document.write ("Alamat : " + tempat_tinggal + "<br>");
+        document.write ("Passion : " + passion + "<br>");
+        document.write ("Tinggi badan : " + tinggi_badan + "<br>");
+        document.write ("Berat badan : " + berat_badan + "<br>");
+    </script>
+    <p></p>
+    <script>
+        // operasi aritmatika dan logika 
+        var a = 10;
+        var b = 20;
+        var c = 0;
+
+        c = a + b;
+        document.write (`${a} + ${b} = ${c} <br>`);
+
+        c = a - b;
+        document.write (`${a} - ${b} = ${c} <br>`);
+
+        c = a ** b;
+        document.write (`${a} ** ${b} = ${c} <br>`);
+
+        c = a / b;
+        document.write (`${a} / ${b} = ${c} <br>`);
+
+        c = a < b;
+        document.write (`${a} < ${b} = ${b} <br>`);
+
+        c = a > b;
+        document.write (`${a} > ${b} = ${c} <br>`);
+
+        c = a && b;
+        document.write (`${a} && ${b} = ${c} <br>`);
+    </script>
+
+    <script>
+        // percabangan input data
+        var input = prompt ("Masukkan angka anatara 1 - 10");
+        input = Number(input);
+
+        let grade;
+
+        if (input > 9) {
+            grade = "A";
+        }
+
+        else if (input > 8) {
+            grade = "B";
+        }
+
+        else if (input > 7) {
+            grade = "C";
+        }
+
+        else if (input > 6) {
+            grade = "D";
+        }
+
+        else {
+            grade = "E";
+        }
+
+        alert ("Nilai kamu adalah " + input + " dengan grade " + grade)
+    </script>
+</body>
+</html>

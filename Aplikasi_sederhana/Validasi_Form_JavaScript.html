@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Form JavaScript</title>
+</head>
+<body>
+    <h1 align="center">Validasi Form JavaScript</h1>
+    <p>Saya sedang belajar JavaScript di Medan Developer</p>
+    <p>Belajar Web Programming di Medan Developer</p>
+
+    <form action="POST" id="validasiForm" onclick="validasiForm(input)">
+        <fieldset>
+            <input type="text" placeholder="MASUKAN USERNAME" required>
+            <p>
+            </p>
+            <input type="text" placeholder="MASUKAN PASSWORD" required>
+            <p>
+            </p>
+            <input type="submit" value="KIRIM" onclick="validasiForm(input)">
+        </fieldset>
+    </form>
+
+    <script>
+        function validasiForm(input)
+        {if(  input.value == "KIRIM") {alert("input tidak boleh kosong!")}
+    }
+    </script>
+</body>
+</html>

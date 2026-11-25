@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB STORAGE LOCAL JAVASCRIPT `</title>
+</head>
+<body>
+    <h1>WEB STORAGE LOCAL JAVASCRIPT `</h1>
+
+    <input type="text" id="input" placeholder="Masukkan input :  ">
+    <button type="button" onclick="simpanData()">KLIK SEKARANG</button>
+    <button type="button" onclick="tampilkanData()">KLIK SEKARANG</button>
+    <p id="hasil"></p>
+
+    <script>
+        function simpanData() {
+            let nama = document.getElementById("input").value;
+            localStorage.setItem ("nama", nama);
+
+            alert ("NAMA KAMU SUDAH ADA DI DATA KAMI !!")
+
+        }
+    </script>
+
+    <script>
+        function tampilkanData() {
+            let hasilDisimpan = localStorage.getItem("nama");
+            if (hasilDisimpan) {
+                document.getElementById("hasil").innerHTML = "Nama kamu adalah" + hasilDisimpan;
+            }
+
+            else {
+                document.getElementById("hasil").innerHTML ="Nama kamu belum disimpan";
+            }
+        }
+    </script>
+</body>
+</html>

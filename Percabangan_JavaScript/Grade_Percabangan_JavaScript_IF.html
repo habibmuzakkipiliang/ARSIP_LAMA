@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Percabangan JavaScript IF</title>
+</head>
+<body>
+    <h1>Grade Percabangan JavaScript IF</h1>
+
+    <script>
+        var data = prompt ("Masukkan data sekarang ...");
+        var isi = "";
+
+        if (data > 90) {
+            grade = "A+";
+        }
+
+        else if (data > 85) {
+            grade = "B+";
+        }
+
+        else if (data < 80) {
+            grade = "C";
+        }
+
+        else if (data < 75) {
+            grade = "D";
+        }
+
+        else if (data < 70) {
+            grade = "E";
+        }
+        
+        else {
+            grade = "F";
+        }
+
+        document.write (`<p>Hasilnya ${grade}, Terimakasih sudah isi datanya </p>`)
+    </script>
+</body>
+</html>

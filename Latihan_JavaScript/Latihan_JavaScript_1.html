@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 1</title>
+</head>
+<body>
+    <script>
+        document.write ("<h1>Latihan JavaScript 1</h1>")
+        alert ("Halo dunia");
+    </script>
+    <p></p>
+
+    <br><button class="btn" onclick="tebu()" value="TOMBOL INI">KLIK TOMBOL INI</button>
+    <script>
+        function tebu() {
+            window.location = "https://google.com";
+        }
+    </script>
+    <p></p>
+    
+    <script>
+        // variabel dan tipe data
+        var nama = "Jonathan Hansel Browner";
+        var asal = "Jerman";
+        var tempat_tinggal = "Amerika Serikat";
+        var hobi = "Mancing, Berbisnis, Berburu Hewan,";
+        var website_resmi = "jonathan.dev";
+
+        document.write ("Halo nama saya adalah " + nama + "<br>")
+        document.write ("Asal saya berasal dari " + asal + "<br>")
+        document.write ("Tempat tinggal saya di " + tempat_tinggal + "<br>")
+        document.write ("Hobi saya adalah " + hobi + "<br>")
+        document.write ("Website resmi saya adalah " + website_resmi + "<br>")
+    </script>
+    <p></p>
+
+    <script>
+        // operator mtk dasar
+
+        var x = 10;
+        var y = 11;
+        var z = 0;
+
+        z = x + y;
+        document.write (`${x} + ${y} = ${z} <br>`)
+
+        z = x - y;
+        document.write (`${x} - ${y} = ${z} <br>`)
+
+        z = x * y;
+        document.write (`${x} * ${y} = ${z} <br>`)
+
+        z = x ** y;
+        document.write (`${x} ** ${y} = ${z} <br>`)
+
+        z = x % y;
+        document.write (`${x} % ${y} = ${z} <br>`)
+
+        z = x < y;
+        document.write (`${x} < ${y} = ${z} <br>`)
+
+        z = x > y;
+        document.write (`${x} > ${y} = ${z} <br>`)
+
+        z = x && y;
+        document.write (`${x} && ${y} = ${z} <br>`)
+
+        z = x || y;
+        document.write (`${x} || ${y} = ${z} <br>`)
+
+        z = x & y;
+        document.write (`${x} & ${y} = ${z} <br>`)
+
+        z = x | y;
+        document.write (`${x} | ${y} = ${z} <br>`)
+    </script>
+
+    <p></p>
+
+    <script>
+        // percabangan
+        var input = prompt("Masukkan nilainya ?");
+
+        if (input == "dave") {
+            document.write ("Besar");
+        }
+
+        else if (input > 12) {
+            document.write ("Kecil");
+        }
+
+        else if (input < 12) {
+            document.write ("kecil")
+        }
+
+        else {
+            document.write ("sama saja")
+        }
+    </script>
+    <p></p>
+
+    <script>
+        // perulangan
+
+        for (var k = 0; k < 10; k++) {
+            document.write ("Perulangan ke- " + k + "<br>");
+        }
+
+        for (var j = 0; j < 5; j++) {
+            document.write ("Perulangan ke- " + j + "<br>")
+        }
+
+        for (var intel = 0; intel < 10; intel++) {
+            document.write ("Perulangan ke - " + intel + "<br>")
+        } 
+    </script>
+</body>
+</html>

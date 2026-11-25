@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEST</h1>
+
+    <input type="text" id="input" placeholder="Masukkan datanya">
+    <button type="button" onclick="simpanMata()">KLIK SAYA</button>
+    <button type="button" onclick="tampilkanMata()">KLIK SAYA</button>
+    <p id="hasil"></p>
+
+    <script>
+        function simpanMata() {
+            let nama = document.getElementById("input").value;
+            localStorage.setItem("nama", nama);
+
+            alert ("DATA ANDA SUDAH MASUK")
+        }
+    </script>
+
+    <script>
+        function tampilkanMata() {
+            let tampilkanSemua = localStorage.getItem ("nama");
+            if (tampilkanSemua) {
+                document.getElementById("hasil").innerHTML = "Nama anda adalah" + tampilkanSemua;
+            }
+
+            else {
+                document.getElementById("hasil").innerHTML = "TIDAK BISA DISIMPAN";
+            }
+        }
+    </script>
+</body>
+</html>

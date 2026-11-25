@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript</title>
+</head>
+<body>
+    <h1>Latihan JavaScript</h1>
+
+    <script>
+        document.write ("<h1>HELLO WORLD</h1>");
+        console.log ("Hello World");
+    </script>
+
+    <script>
+        var nama = "GRU";
+        document.write ("Halo " + nama + "<br>");
+    </script>
+
+    <script>
+        var i = 12;
+        var n = 50;
+        var k = 0;
+
+        k = n + i;
+        document.write (`${n} + ${i} = ${k} <br>`);
+
+        k = n - i;
+        document.write (`${n} - ${i} = ${k} <br>`);
+
+        k = n ** i;
+        document.write (`${n} ** ${i} = ${k} <br>`);
+
+        k = n < i;
+        document.write (`${n} < ${i} = ${k} <br>`);
+
+        k = n > i;
+        document.write (`${n} > ${i} = ${k} <br>`);
+
+        k = n && i;
+        document.write (`${n} && ${i} = ${k} <br>`);
+
+        k = n / i;
+        document.write (`${n} / ${i} = ${k} <br>`);
+
+        k = n % i;
+        document.write (`${n} % ${i} = ${k} <br>`);
+
+        k = n ^ i;
+        document.write (`${n} ^ ${i} = ${k} <br>`)
+    </script>
+
+    <script>
+        var k = prompt ("Masukkan data kamu");
+
+        if (k > 100) {
+            document.write ("<p>BENAR</p>")
+        }
+
+        else if (k < 87) {
+            document.write ("<p>SALAH</p>");
+        }
+
+        else if (k < 85 ) {
+            document.write ("<p>SALAH</p>");
+        }
+
+        else {
+            document.write ("<p>SAMA SAJA</p>");
+        }
+    </script>
+
+    <script>
+        for (let u = 0; u < 10; u++) {
+            document.write ("<p>Perulangan ke-" + u + "</p>");
+        }
+
+        for (let unik = 0; unik < 10; unik++) {
+            document.write ("<p>Perulangan ke-</p>" + unik + "<br>")
+        }
+    </script>
+        
+
+    <p>SAYA SEDANG LATIHAN JAVASCRIPT</p>
+    <button id="latihanOP" onclick="latihanOP()">TOUCH</button>
+    <div id="latihanOP"></div>
+
+    <script>
+        function latihanOP() {
+            let koper = document.getElementById ("latihanOP");
+            koper.innerHTML += "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque autem velit quisquam aliquam. Tempore eligendi nesciunt omnis pariatur tempora cumque quibusdam id consequuntur ducimus quidem sunt laboriosam, quaerat culpa.</p>"
+        }
+    </script>
+
+    <p>SAYA SEDANG LATIHAN</p>
+    <button id="koperBA" onclick="koperBA()">KLIK SEKARANG</button>
+    <div id="koperBA"></div>
+
+    <script>
+        function koperBA() {
+            let koper = document.getElementById ("koperBA");
+            koper.innerHTML += "<p>PERSAONAL DIOLAN HUOJA LIO~KDOD</p>";
+        }
+    </script>
+
+    <div id="koper-itu"></div>
+    <script>
+        let koper = document.getElementById("koper-itu");
+        koper.innerHTML = "<p>AKAIAIODJHIDOJDIJADOJADJADIJDIOJD</p>";
+    </script>
+
+    <div id="loper-op"></div>
+    <script>
+        let loper = document.getElementById ("loper-op");
+        loper.innerHTML += "<p>IOIOJDIOJADPJDAPADJIODJIOJDIODJIDJPIDJDPJDIJDIOJDIJDIDJIDJDPIJDPIJDPIJDPIJDPIJDPIJDPIJDPJDPIDJPIDJIDJIDJDPJDPIJDPIJDIODJPIODJ</p>";
+    </script>
+
+    <button class="btn" id="ijuk" onclick="ijukBesar()">Klik sekarang</button>
+    <div id="ijuk"></div>
+
+    <script>
+        function ijukBesar() {
+            var ijuk = document.getElementById ("ijuk");
+            ijuk.innerHTML += "<p>Surabaya memiliki populasi etnis Tionghoa yang besar, dengan persentase sekitar 7,25%. Kawasan seperti Kya-Kya Kembang Jepun dikenal sebagai pusat kuliner dan budaya Tionghoa yang ramai di kota ini.</p>"
+        }
+    </script>
+</body>
+</html>

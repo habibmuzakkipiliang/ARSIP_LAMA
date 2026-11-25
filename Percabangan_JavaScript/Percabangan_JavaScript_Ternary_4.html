@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan JavaScript Ternary 4</title>
+</head>
+<body>
+    <h1>Percabangan JavaScript Ternary 4</h1>
+
+    <script>
+        var nama_anda = prompt ("Masukkan Nama Anda ??");
+        var nomor_anda = prompt ("Masukkan Nomor Anda ??");
+        var umur_anda = prompt ("Masukkan Umur Anda ??");
+        var kelas_anda = prompt ("Masukkan Kelas Anda ??");
+
+        if (nama_anda == "Habib") {
+            if (nomor_anda == "12") {
+                if (umur_anda == "18") {
+                    if (kelas_anda == "12")
+                    document.write ("<h2>Selamat datang di Aplikasi saya</h2>")
+                }
+
+                else {
+                    document.write ("<p>Anda belum masuk</p>")
+                }
+            }
+        }
+
+        else {
+            document.write ("<h3>Anda Tidak Terdaftar</h3>")
+        }
+    </script>   
+</body>
+</html>

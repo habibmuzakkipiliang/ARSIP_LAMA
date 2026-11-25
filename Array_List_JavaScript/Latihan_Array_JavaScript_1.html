@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Array JavaScript 1</title>
+</head>
+<body>
+    <script>
+        var osn = ["Informatika (Komputer)", "Matematika", "Kimia", "Fisika", "Kebumian", "Astronomi", "Ekonomi", "Geografi", "Biologi"];
+
+        document.write ("<h1>OSN (Olimpiade Sains Nasional) SMA</h1>")
+
+        document.write ("<ol>")
+            for (var m = 0; m < osn.length; m++) {
+                document.write (`<li> ${osn[m]}</li>`)
+            }
+
+        document.write ("</ol>")
+    </script>
+
+    <script>
+        var minions = ["Kevin (Utama)", "Stuart", "Bob", "Dave", "Phil", "Tim", "Carl", "Jorge", "Mel", "Otto"];
+
+        document.write ("<h1>Nama-nama Minions</h1>");
+        document.write ("<ol>")
+            for (var f = 0; f < minions.length; f++) {
+                document.write (`<li> ${minions[f]}</li>`)
+            }
+
+        document.write ("</ol>")
+    </script>
+
+    <script>
+        var temen_pendopo = ["Wisnu", "Alfi", "Fildza", "Arkan", "Hayyan"];
+
+        document.write ("<h1>Teman-teman Pendopo</h1>");
+        document.write ("<ol>")
+            for (var t = 0; t < temen_pendopo.length; t++) {
+                document.write (`<li> ${temen_pendopo[t]}</li>`)
+            }
+
+        document.write ("</ol>")
+    </script>
+</body>
+</html>
